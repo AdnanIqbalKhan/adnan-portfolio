@@ -88,7 +88,7 @@ export default function AboutMe(props) {
 
             <div className="absolute w-5/6 h-5/6  rounded overflow-hidden">
               <div className="absolute w-full h-full group-hover:opacity-0 bg-AAsecondary opacity-10 duration-300 rounded overflow-hidden"></div>
-              <Img src={"/img/Portfolio-portrait-3.jpg"} className={"object-contain rounded-lg"} alt="My Image Not Found" />
+              <Img src={"/img/Portfolio-portrait.jpg"} className={"object-contain rounded-lg"} alt="My Image Not Found" />
             </div>
           </div>
           {/* // ?Image in Mobile */}
