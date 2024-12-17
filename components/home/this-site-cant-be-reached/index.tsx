@@ -1,8 +1,8 @@
 import React from "react";
-import { motion } from "../../../node_modules/framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import { getURL } from "../../../utils";
 export default function ThisCantBeReached() {
-  const [ShowText, setShowText] = React.useState(false);
+  const [showText, setShowText] = React.useState(false);
   let CenterWidth = 0;
   let CenterHeight = 0;
   React.useEffect(() => {
@@ -181,7 +181,7 @@ export default function ThisCantBeReached() {
         >
           <span className="text-gray-600 font-Header text-2xl">
             This site{" "}
-            {ShowText ? (
+            {showText ? (
               <motion.span
                 animate={{ scale: ["100%", "120%"] }}
                 transition={{ scale: { delay: 4, duration: 0.5 } }}
@@ -197,7 +197,7 @@ export default function ThisCantBeReached() {
           <span className="text-gray-500 text-md">
             <span className="font-bold">{getURL() + " "}</span>
             unexpectedly{" "}
-            {ShowText ? (
+            {showText ? (
               <motion.span
                 animate={{ scale: ["100%", "140%"] }}
                 transition={{ scale: { delay: 4, duration: 1 } }}
@@ -228,7 +228,7 @@ export default function ThisCantBeReached() {
             </div>
           </div>
           <span className="text-gray-400 text-sm">
-            {ShowText ? (
+            {showText ? (
               <motion.span
                 animate={{ scale: ["100%", "120%"] }}
                 transition={{ scale: { delay: 4, duration: 0.5 } }}
@@ -249,7 +249,7 @@ export default function ThisCantBeReached() {
         className=""
       >
         <button className="px-4 py-2 bg-blue-500 rounded text-white sm:text-base text-sm">
-          {ShowText ? "Start" : "Reload"}
+          {showText ? "Start" : "Reload"}
         </button>
       </motion.div>
     </motion.div>

@@ -1,7 +1,8 @@
 import "../styles/globals.css";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import AppContext from "../components/AppContextFolder/AppContext";
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { appWithTranslation } from "next-i18next";
 
 function MyApp({ Component, pageProps }) {
   const timerCookie = useRef(null);
@@ -14,9 +15,9 @@ function MyApp({ Component, pageProps }) {
         scrolling: null,
         scrollSizeY: null,
       },
-      Scrolling:{
-        IntervalEvent:null
-      }
+      Scrolling: {
+        IntervalEvent: null,
+      },
     },
     userdata: {
       timerCookieRef: timerCookie,
@@ -29,12 +30,16 @@ function MyApp({ Component, pageProps }) {
     },
     finishedLoading: false,
   });
+  const value = useMemo(
+    () => ({ sharedState, setSharedState }),
+    [sharedState, setSharedState]
+  );
   return (
-    <AppContext.Provider value={{ sharedState, setSharedState }}>
+    <AppContext.Provider value={value}>
       <Component {...pageProps} />
       <Analytics />
     </AppContext.Provider>
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);
