@@ -92,3 +92,4 @@ export const PROJECTS_DATA = [
   },
 ];
 
+export type TProject = typeof PROJECTS_DATA[number];

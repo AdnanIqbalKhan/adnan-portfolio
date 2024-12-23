@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import ArrowIcon from "../../Icons/ArrowIcon";
 import Img from "../../smallComp/image/Img";
 import GithubIcon from "../../Icons/GithubIconForSomethingIveBuild";
 import ExternalLink from "../../Icons/ExternalLink";
-import { PROJECTS_DATA } from "../../../utils/data/projects";
+import { PROJECTS_DATA, TProject } from "../../../utils/data/projects";
 import { emphasize } from "../../../utils/emphasize";
 
+const WebsitePreview = ({ project }: { project: TProject }) => {
+  return (
+    <div className="w-full h-full bg-AAtertiary rounded p-6 flex flex-col justify-center">
+      {project.url && (
+        <div className="relative w-full h-64 bg-gray-800 rounded overflow-hidden">
+          <iframe
+            src={project.url}
+            className="w-full h-full"
+            style={{ pointerEvents: "none" }}
+            title={project.title}
+          />
+          <div className="absolute inset-0" />
+        </div>
+      )}
+    </div>
+  );
+};
 const ProjectCard = ({ project, isRight = false }) => {
+  const [imageError, setImageError] = useState(false);
   const contentClass = isRight
     ? "md:items-end md:text-right"
     : "items-start text-left";
@@ -24,11 +42,16 @@ const ProjectCard = ({ project, isRight = false }) => {
           <Link href={project.url || "#"}>
             <div className="absolute w-full h-full rounded bg-AAsecondary transition-opacity opacity-20 hover:opacity-0 hover:cursor-pointer duration-300" />
           </Link>
-          <Img
-            src={project.imageUrl}
-            alt={project.title}
-            className="w-full rounded h-full"
-          />
+          {imageError ? (
+            <WebsitePreview project={project} />
+          ) : (
+            <Img
+              src={project.imageUrl}
+              alt={project.title}
+              className="w-full rounded h-full"
+              onError={() => setImageError(true)}
+            />
+          )}
         </div>
       </div>
 
