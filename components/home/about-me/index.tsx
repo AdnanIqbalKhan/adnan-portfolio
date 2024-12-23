@@ -74,13 +74,13 @@ export default function AboutMe() {
                 achieve that, my journey with programming started from that
                 time! */}
 
-                {emphasizeIntro(t("home:intro_1"))}
+                {emphasizeIntro(t("home:intro.para1"))}
               </span>
             </div>
             <div className="font-Header tracking-wide">
               <span className="text-gray-400  ">
                 {" "}
-                {emphasizeIntro(t("home:intro_2"))}
+                {emphasizeIntro(t("home:intro.para2"))}
               </span>
             </div>
 

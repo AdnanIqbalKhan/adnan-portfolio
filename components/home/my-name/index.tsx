@@ -68,7 +68,7 @@ export default function MyName(props: Readonly<{ finishedLoading: boolean }>) {
         transition={transition.span}
         className="text-AAsecondary font-mono"
       >
-        {t("home:hero_lead")}
+        {t("home:hero.lead")}
       </motion.span>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
@@ -76,7 +76,7 @@ export default function MyName(props: Readonly<{ finishedLoading: boolean }>) {
         transition={transition.h1}
         className="text-gray-300 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        {t("home:hero_title")}
+        {t("home:hero.title")}
       </motion.h1>
       <motion.h2
         initial={{ y: 10, opacity: 0 }}
@@ -84,7 +84,7 @@ export default function MyName(props: Readonly<{ finishedLoading: boolean }>) {
         transition={transition.h2}
         className="text-gray-400 font-bold text-3xl lg:text-7xl sm:text-5xl md:text-6xl mt-4"
       >
-        {t("home:hero_subheading")}
+        {t("home:hero.subheading")}
       </motion.h2>
 
       <motion.h3
@@ -93,7 +93,7 @@ export default function MyName(props: Readonly<{ finishedLoading: boolean }>) {
         transition={transition.h3}
         className="text-gray-400 font-Header text-sm md:text-lg sm:text-md mt-10 tracking-wider"
       >
-        {emphasizeHero(t("home:hero_description"))}
+        {emphasizeHero(t("home:hero.description"))}
       </motion.h3>
       <motion.div
         initial={{ y: 10, opacity: 0 }}
@@ -103,7 +103,7 @@ export default function MyName(props: Readonly<{ finishedLoading: boolean }>) {
       >
         <a href={"/resume.pdf"} target={"_blank"} rel="noreferrer">
           <button className="bg-AAprimary text-AAsecondary border rounded px-4 sm:px-8 py-3 sm:py-4 border-AAsecondary">
-            {t("home:hero_cta")}
+            {t("home:hero.cta")}
           </button>
         </a>
       </motion.div>

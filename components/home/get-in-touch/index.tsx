@@ -19,16 +19,16 @@ export default function GetInTouch() {
             04.
           </span>
           <span className=" font-sans text-AAsecondary text-base">
-            {t("home:contact_subtitle")}
+            {t("home:contact.subtitle")}
           </span>
         </div>
       </div>
       {/* // ? Get In Touch */}
       <span className="text-gray-200 text-3xl sm:text-4xl font-bold tracking-wider opacity-85">
-        {t("home:contact_title")}
+        {t("home:contact.title")}
       </span>
       <p className="flex font-Header tracking-wider text-gray-400 text-center px-6 sm:px-16 md:px-0 md:w-[600px]">
-        {t("home:contact_message")}
+        {t("home:contact.message")}
       </p>
       <div className="pt-4">
         <a href={`mailto:${EMAIL_ADDRESS}`} target={"_blank"} rel="noreferrer">
@@ -36,7 +36,7 @@ export default function GetInTouch() {
             className="font-mono text-sm text-AAsecondary border-AAsecondary 
                             px-8 py-4 border-[1.5px] rounded "
           >
-            {t("home:contact_cta")}
+            {t("home:contact.cta")}
           </button>
         </a>
       </div>
