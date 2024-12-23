@@ -38,13 +38,7 @@ export const INTRO_EMPHASIZE_WORDS = [
   "robust, functional products",
 ];
 
-interface EmphasizeProps {
-  text: string;
-  keywords: string[];
-  emphasisClassName?: string;
-}
-
-const emphasize = (
+export const emphasize = (
   text: string,
   keywords: string[],
   emphasisClassName: string = "text-AAsecondary"
