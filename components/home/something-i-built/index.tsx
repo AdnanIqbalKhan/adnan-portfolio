@@ -45,13 +45,14 @@ const ProjectCard = ({ project, isRight = false }) => {
           {imageError ? (
             <WebsitePreview project={project} />
           ) : (
-            <Img
-              src={project.imageUrl}
-              alt={project.title}
-              className="w-full rounded h-full"
-              onError={() => setImageError(true)}
-            />
-          )}
+          <Img
+            style={{ objectFit: "contain", maxHeight: "350px" }}
+            src={project.imageUrl}
+            alt={project.title}
+            className="w-full rounded h-full"
+            onError={() => setImageError(true)}
+          />
+          )} 
         </div>
       </div>
 

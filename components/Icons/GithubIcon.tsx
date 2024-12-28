@@ -1,12 +1,11 @@
 import React from "react";
 
-export default function GithubIcon(props) {
+export default function GithubIcon(props: Readonly<{ className: string }>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       aria-hidden="true"
-      role="img"
       className={props.className}
       viewBox="0 0 24 24"
     >

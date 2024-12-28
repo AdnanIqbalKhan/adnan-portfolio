@@ -69,7 +69,7 @@ export default function Home() {
   const meta = {
     title: t("meta:title"),
     description: t("meta:description"),
-    image: "/profile.png",
+    image: "/img/profile.png",
     type: "website",
     url: WEBSITE_URL,
     siteName: t("meta:site_name"),

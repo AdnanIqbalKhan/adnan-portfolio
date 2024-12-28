@@ -1,6 +1,14 @@
 import React from "react";
 
-export default function Img(props) {
+export default function Img(
+  props: Readonly<{
+    src: string;
+    alt: string;
+    className: string;
+    onError: () => void;
+    style: React.CSSProperties;
+  }>
+) {
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
@@ -8,9 +16,9 @@ export default function Img(props) {
       alt={props.alt}
       className={props.className}
       onError={() => {
-        console.log("Image not found");
         props?.onError?.();
       }}
+      style={props.style}
     />
   );
 }

@@ -4,7 +4,7 @@ export const PROJECTS_DATA = [
     title: "Salesforce PWA - Vineyard Vines",
     keywords: ["Salesforce", "PWA", "React"],
     type: "web application",
-    imageUrl: "/projects/salesforce-pwa-vineyard-vines.png",
+    imageUrl: "/img/projects/vineyard_vines.png",
     githubUrl: null,
     url: "https://www.vineyardvines.com",
     description: {
@@ -17,7 +17,7 @@ export const PROJECTS_DATA = [
     title: "Express CRUD Maker",
     keywords: ["Express", "CRUD", "Dev Tools"],
     type: "dev tools",
-    imageUrl: "/projects/express-crud-maker.png",
+    imageUrl: "/img/projects/express_crud_generator.png",
     githubUrl: "https://github.com/AdnanIqbalKhan/express-crud-maker",
     url: "https://www.npmjs.com/package/express-crud-maker",
     description: {
@@ -30,7 +30,7 @@ export const PROJECTS_DATA = [
     title: "qlu-fetch",
     keywords: ["Fetch", "Retry", "API"],
     type: "library",
-    imageUrl: "/projects/qlu-fetch.png",
+    imageUrl: "/img/projects/qlu_fetch.png",
     githubUrl: "https://gitlab.com/adnaniqbalkhan/qlu-fetch",
     url: "https://www.npmjs.com/package/qlu-fetch",
     description: {
@@ -43,7 +43,7 @@ export const PROJECTS_DATA = [
     title: "Console Log Colorizer",
     keywords: ["Console", "Logging", "Colors"],
     type: "dev tools",
-    imageUrl: "/projects/console-log-colorizer.png",
+    imageUrl: "/img/projects/console_log_colorizer.png",
     githubUrl: "https://github.com/AdnanIqbalKhan/console-log-colorizer",
     url: "https://www.npmjs.com/package/console-log-colorizer",
     description: {
@@ -56,12 +56,48 @@ export const PROJECTS_DATA = [
     title: "Qlu.ai Chrome Extension",
     keywords: ["Chrome Extension", "React", "AI"],
     type: "browser extension",
-    imageUrl: "/projects/qlu-ai-chrome-extension.png",
+    imageUrl: "/img/projects/qlu.png",
     githubUrl: null,
-    url: null,
+    url: "https://www.qlu.ai/",
     description: {
       text: "Developed a Chrome Extension for the AI-based recruitment platform 'Qlu.ai' using React.js, extending the product's functionality and user accessibility.",
       keywords: ["Chrome Extension", "AI Recruitment", "React.js"],
+    },
+  },
+  {
+    id: "xchangepost-app",
+    title: "Xchange Post - Community Rental App",
+    keywords: ["React Native", "Mobile App", "Firebase"],
+    type: "mobile application",
+    imageUrl: "/img/projects/xchange_post.png",
+    githubUrl: null,
+    url: "https://xchangepost.wixsite.com/info",
+    description: {
+      text: "Xchange Post is here to make your life easier and more affordable. It simplifies planning your next project or event with an intuitive rental app that harnesses the power of the sharing economy. Users can easily rent, share, and manage items, promoting convenience and cost savings.",
+      keywords: [
+        "React Native",
+        "Firebase",
+        "Sharing Economy",
+        "Cross-Platform",
+      ],
+    },
+  },
+  {
+    id: "extentY-app",
+    title: "extentY - Body & Weight Tracker App",
+    keywords: ["React Native", "Mobile App", "Firebase"],
+    type: "mobile application",
+    imageUrl: "/img/projects/extentY.png",
+    githubUrl: null,
+    url: "https://play.google.com/store/apps/details?id=de.aktiwir.aktibody&hl=en",
+    description: {
+      text: "extentY is your perfect companion for tracking and improving your body measurements. Whether it's biceps, thighs, chest, abdominal circumference, or shoulders, this app allows you to record, evaluate, and optimize your body metrics seamlessly. Stay motivated and monitor your progress with ease.",
+      keywords: [
+        "React Native",
+        "Firebase",
+        "Body Measurements",
+        "Cross-Platform",
+      ],
     },
   },
   {
@@ -69,7 +105,7 @@ export const PROJECTS_DATA = [
     title: "House Construction Management App",
     keywords: ["React Native", "Mobile App", "Firebase"],
     type: "mobile application",
-    imageUrl: "/projects/house-construction-app.png",
+    imageUrl: "/img/projects/home_story.png",
     githubUrl: null,
     url: null,
     description: {
@@ -78,12 +114,30 @@ export const PROJECTS_DATA = [
     },
   },
   {
+    id: "f4l-digital-business-cards",
+    title: "F4L Digital Business Cards",
+    keywords: ["Digital Business Cards", "Personal Branding", "Networking"],
+    type: "web application",
+    imageUrl: "/img/projects/f4l.png",
+    githubUrl: null,
+    url: "http://f4l.com/",
+    description: {
+      text: "F4L Digital Business Cards is a revolutionary platform allowing users to create and share personalized digital business cards. With F4L, you can add social links, email, phone numbers, and even a favorite photo to create a unique and professional card. The digital card can be shared instantly, enabling recipients to save your contact details with just one click, making it an essential networking tool for personal and professional use.",
+      keywords: [
+        "Digital Business Cards",
+        "Networking",
+        "Social Links",
+        "Personal Branding",
+      ],
+    },
+  },
+  {
     id: "delivery-android-app-kindred",
     title: "Delivery Android App - Kindred",
     keywords: ["Android", "Firebase", "Google Maps API"],
     type: "mobile application",
-    imageUrl: "/projects/delivery-android-app-kindred.png",
-    githubUrl: null,
+    imageUrl: "/img/projects/kindred.png",
+    githubUrl: "https://github.com/AdnanIqbalKhan/Kindred",
     url: null,
     description: {
       text: "Designed and developed a delivery app for Android with robust user authentication and navigation features using Firebase Authentication and Google Maps API. Published on the Google Play Store.",
@@ -92,4 +146,4 @@ export const PROJECTS_DATA = [
   },
 ];
 
-export type TProject = typeof PROJECTS_DATA[number];
+export type TProject = (typeof PROJECTS_DATA)[number];
