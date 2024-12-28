@@ -5,8 +5,8 @@ export default function Img(
     src: string;
     alt: string;
     className: string;
-    onError: () => void;
-    style: React.CSSProperties;
+    onError?: () => void;
+    style?: React.CSSProperties;
   }>
 ) {
   return (
