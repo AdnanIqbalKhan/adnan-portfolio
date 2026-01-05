@@ -98,6 +98,10 @@ export default function Home() {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <div className="relative snap-mandatory min-h-screen bg-AAprimary w-full ">
+        <script
+          src="https://dropinchat.vercel.app/api/chatbot?apiKey=cmk17u7ic0002yues4jm536lv"
+          async={true}
+        ></script>
         {!finishedLoading && showThisCantBeReached && <ThisCantBeReached />}
         {!finishedLoading && showElement && <Startup />}
         <Header finishedLoading={finishedLoading} />

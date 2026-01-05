@@ -1,4 +1,39 @@
 export const EXPERIENCE_DATA = {
+  "systems-ltd:senior-consultant-development": {
+    id: "systems-ltd:consultant-development",
+    title: {
+      text: "Senior Consultant Development",
+      keywords: ["Senior Consultant", "Development"],
+    },
+    company: "Systems Ltd.",
+    companyUrl: "https://www.systemsltd.com",
+    date: {
+      start: "January 2025",
+      end: "Present",
+    },
+    tasks: [
+      {
+        text: "Developed diverse web applications suiting different business domains.",
+        keywords: ["web applications", "business domains"],
+      },
+      {
+        text: "Created complex solutions to fit client and business requirements.",
+        keywords: ["complex solutions", "client requirements"],
+      },
+      {
+        text: "Developed user interfaces for a Salesforce PWA using React.",
+        keywords: ["Salesforce PWA", "React"],
+      },
+      {
+        text: "Integrated backend APIs seamlessly into the front-end.",
+        keywords: ["backend APIs", "front-end integration"],
+      },
+      {
+        text: "Translated Figma designs into pixel-perfect front-end components.",
+        keywords: ["Figma", "front-end components"],
+      },
+    ],
+  },
   "systems-ltd:consultant-development": {
     id: "systems-ltd:consultant-development",
     title: {
@@ -9,7 +44,7 @@ export const EXPERIENCE_DATA = {
     companyUrl: "https://www.systemsltd.com",
     date: {
       start: "June 2023",
-      end: "Present",
+      end: "Dec 2024",
     },
     tasks: [
       {
